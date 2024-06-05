@@ -1,0 +1,14 @@
+dataset:
+  raw_path: D:\\tmp\\bearing_raw.sqlite
+  split_path: D:\\tmp\\bearing.sqlite
+
+open_dataset:
+  cwru: E:\\CHFS\\数据集\\Bearing\\CWRU\\raw
+  dirg: E:\\CHFS\\数据集\\Bearing\\DIRG\\Total Data\\RAW
+  hit: E:\\CHFS\\数据集\\Bearing\\HIT哈工大航发轴间轴承
+  hust: E:\\CHFS\\数据集\\Bearing\\HUST河内大学数据集\\data
+  ims: E:\\CHFS\\数据集\\Bearing\\IMS\\Total Data
+  jnu: E:\\CHFS\\数据集\\Bearing\\JNU江南大学数据集\\Total data
+  mfpt: E:\\CHFS\\数据集\\Bearing\\MFPT
+  pu: E:\\CHFS\\数据集\\Bearing\\PU帕德博恩大学
+  xjtu: E:\\CHFS\\数据集\\Bearing\\XJTU-SY西交昇阳\\Total Data

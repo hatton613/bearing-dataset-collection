@@ -1,0 +1,17 @@
+dataset:
+  path: D:\\tmp\\bearing.sqlite
+open_dataset:
+  CWRU: 3
+  DIRG: 6
+  HIT: 4
+  HUST: 1
+  IMS: 8
+  JNU: 5
+  MFPT: 1
+  PU: 1
+  XJTU: 2
+server:
+  host: 0.0.0.0
+  origins:
+  - '*'
+  port: 24680
