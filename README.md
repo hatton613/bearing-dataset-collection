@@ -60,6 +60,10 @@
 
 ## 后端部署
 
+现在你可以在[release](https://github.com/hatton613/bearing-dataset-collection/releases)页面下载可执行文件运行后端了，无需下载安装python和依赖，但仍需额外下载数据库文件并修改配置文件内的路径。
+
+以下是源码运行方式：
+
 1. 安装python  
    前往[官网](https://www.python.org/downloads/)下载python安装程序，或者使用[miniconda](https://docs.anaconda.com/free/miniconda/miniconda-other-installer-links/)或者Anaconda。如果你使用venv或者conda，请确保进行以下步骤前进入虚拟环境。
 

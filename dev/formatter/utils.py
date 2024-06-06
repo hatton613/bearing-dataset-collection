@@ -152,6 +152,7 @@ class RawDataset:
         cursor = self.conn.cursor()
         cursor.execute('SELECT * FROM data')
         stats_dict_num = get_stats_dict()
+        stats_dict_point = get_stats_dict()
         stats_dict_time = get_stats_dict()
         with tqdm(total=record_num) as tbar:
             for i in range(record_num):
@@ -162,9 +163,10 @@ class RawDataset:
                 data_time = data_point_num / freq
                 fault_id = get_fault_id(row[5], row[6], row[7], row[8])
                 stats_dict_num[row[1]][fault_id] += 1
+                stats_dict_point[row[1]][fault_id] += data_point_num
                 stats_dict_time[row[1]][fault_id] += data_time
                 tbar.update(1)
-        return stats_dict_num, stats_dict_time
+        return stats_dict_num, stats_dict_point, stats_dict_time
 
 
 def check_split_db_file():
