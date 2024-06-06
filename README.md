@@ -44,21 +44,18 @@
 
 ## 前端部署
 
-1. 配置node.js
+1. 配置node.js  
    前往[官网](https://nodejs.org/en/download/package-manager)下载自己操作系统的nodejs。windows下可以下载安装包安装，也可以下载二进制文件，解压后配置环境变量。
 
-2. 安装依赖
+2. 安装依赖  
    在命令行/Powershell下进入项目根目录，运行命令`npm install`。稍等一段时间会自动完成依赖安装。
 
-3. 运行前端
-   
-   如果修改了后端地址/端口，请同步修改`./src/utils.ts`内的`backUrl`变量。
-
-   1. 简易方法
+3. 运行前端  
+   如果修改了后端地址/端口，请同步修改`./src/utils.ts`内的`backUrl`变量。  
+   1. 简易方法  
       可在`package.json`中修改前端监听的host和端口。
       在命令行/Powershell下进入项目根目录，运行命令`npm run dev`。
-   
-   2. 生产环境
+   2. 生产环境  
       在命令行/Powershell下进入项目根目录，运行命令`npm run build`， 得到dist静态文件，使用Apache等工具进行生产环境部署。
 
 ## 后端部署
@@ -70,7 +67,7 @@
    在命令行/Powershell下进入项目内的`backend`目录，运行`pip3 install -r requirements.txt`。
 
 3. 下载数据库文件  
-   还没找到合适的网盘，等填坑。
+   使用种子下载`./backend/bearing.sqlite.torrent`或前往该[链接](https://www.123pan.com/s/bsElVv-hGMC.html)下载，提取码:ZzUx。
 
 4. 运行后端  
    可修改`./backend/config.yaml`文件，修改数据库文件存放位置，后端监听端口和host。注意，如果你需要修个CORS规则，只允许特定域名或IP访问后端，可以去掉origins下的'*'，并修改问你允许的域名或IP列表。   
